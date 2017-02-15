@@ -1,0 +1,18 @@
+{
+  "name": "mr-farmer",
+  "version": "0.1.0",
+  "description": "Ask Mr Farmer what noises animals make",
+  "main": "index.js",
+  "scripts": {
+    "invoke": "aws lambda invoke --function-name \"HomeHelper\" --payload fileb://PATH_TO_DIRECTORY/test/invocation.json test/out.txt && cat test/out.txt",
+    "test": "node ../tests/test.js",
+    "update": "npm run zip && npm run upload",
+    "upload": "aws lambda update-function-code --function-name \"HomeHelper\" --zip-file fileb://PATH_TO_DIRECTORY/build/lambda.zip",
+    "zip": "zip -r build/lambda.zip . -x \"package.json\" -x \"*.git*\""
+  },
+  "author": "Scriptic <silas@siland.co.uk>",
+  "license": "GNU GPLv3",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6"
+  }
+}

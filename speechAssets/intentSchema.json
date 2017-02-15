@@ -1,0 +1,31 @@
+{
+  "intents": [
+    {
+      "intent": "Introduction",
+      "slots":[
+        {
+          "name":"firstname",
+          "type":"AMAZON.US_FIRST_NAME"
+        }
+      ]
+    },
+    {
+      "intent": "WhatNoise",
+      "slots":[
+        {
+          "name":"animal",
+          "type":"AMAZON.Animal"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}

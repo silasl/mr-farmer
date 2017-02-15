@@ -1,0 +1,5 @@
+Introduction my name is {firstname}
+WhatNoise what noise a {animal} makes
+WhatNoise what noise an {animal} makes
+WhatNoise what a {animal} says
+WhatNoise what an {animal} says
